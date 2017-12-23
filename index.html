@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	  <title>Project Two</title>
+	  <script src="projectTwo.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+<body>
+	<form id="orderBurrito">
+		<table cellspacing="3" cellpadding="2" border="0">
+			<tbody>
+        <tr>
+      	  <td align="right">Choose your burrito:</td>
+      		<td>
+      			<div id="burritoChoice">
+        			<select id="burrito"> 
+          		<option id="selectOne" value="Select One">Select One</option> 
+          		<option id="chicken" value="Chicken">Chicken - $6.20</option> 
+          		<option id="steak" value="Steak">Steak - $6.75</option> 
+          		<option id="carnitas" value="Carnitas">Carnitas - $6.60</option>
+          		<option id="barbacoa" value="Barbacoa">Barbacoa - $6.60</option> 
+          		<option id="vegetarian" value="Vegetarian">Vegetarian - $6.20</option> 
+        			</select>
+      		  </div>
+      		</td> 
+      	</tr>
+      	<tr>
+      		<td align="right">Select a rice:</td>
+      		<td>
+	    			<div id="riceChoice"> 
+	        		<input type="radio" name="rice" id="whiteRice" value="White Rice">White Rice</input> 
+	        		<input type="radio" name="rice" id="brownRice" value="Brown Rice">Brown Rice</input>
+	    			</div>
+	    		</td>
+	    	</tr>
+	    	<tr>
+	    		<td align="right">Which type of beans:</td>
+	    		<td>
+	    			<div id="beanChoice">
+	        		<input type="radio" name="beans" id="pintoBeans" value="Pinto Beans">Pinto Beans</input> 
+	        		<input type="radio" name="beans" id="blackBeans" value="Black Beans">Black Beans</input> 
+	    			</div>
+	    		</td>	
+	      </tr>
+	      <tr>
+	      	<td align="right">Choose Salsa(s):</td>
+	      	<td>
+	    			<div id="salsoChoice">
+          		<input type="checkbox" id="picoDeGallo" name="salsa" value="Pico De Gallo">Pico De Gallo</input>
+          		<input type="checkbox" id="roastedCorn" name="salsa" value="Roasted Corn">Roasted Corn</input>
+          		<input type="checkbox" id="tomatillo-green" name="salsa" value="Tomatillo - Green">Tomatillo - Green</input>
+          		<input type="checkbox" id="tomatillo-red" name="salsa" value="Tomatillo - Red">Tomatillo - Red</input>
+          	</div>
+          </td>
+        </tr>
+        <tr>
+	         <td align="right">Add Guacamole $1.40</td>
+	      	 <td>
+					 <div id="guacChoice">
+            	<input type="checkbox" id="guacamole" name="guacamole" value="Guacamole"></input>
+        		</div>
+        	</td>
+        </tr>
+        <tr>
+          <td align="right"></td>
+          <td>
+        		<input type="button" id="order" value="add burrito to order" />
+        	</td>  
+         </tr>
+        </tbody>
+      </table>  
+    </form>
+    <br/>
+    <div id="dash" style="border:dashed"></div>
+    <div id="grandTotalValue"></div>
+  </body>
+</html>
+<script type="text/javascript" charset="utf-8">
+init();
+</script>
